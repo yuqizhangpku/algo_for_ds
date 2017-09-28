@@ -1,5 +1,10 @@
 import networkx as nx
 import urllib2
+'''
+In this homework we work with a dataset recording the interactions between characters in Homer's Iliad. 
+Here I implement depth-first seqarch for identifying the connected components of an undirected graph, 
+implementing procedure Search as a subroutine along the way.
+'''
 
 homer = urllib2.urlopen('http://people.sc.fsu.edu/~jburkardt/datasets/sgb/homer.dat')
 def read_nodes(gfile):
